@@ -1,145 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>dev.control</title>
 </head>
-        <link rel="stylesheet" href="./style.css">
 <body>
-    <main>
-
+    <div class="container">
         <section id="cadastro">
-            <h2 class="cadastro-produto">CADASTRAR PRODUTO</h2>
+            <h2>
+                Cadastrar Produto
+            </h2>
 
-            <div class="nome
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            -produto">
-                <form action="">
-                    <label for="">NOME PRODUTO</label>
-                    <input type="text"><br>
-            </div>
-            <div class="fabricante-produto">
-                <label for="">FABRICANTE PRODUTO</label>
-                <input type="text" list="productdata">
-                <datalist id="productdata">
+            <form action="">
+                <label for="name">Nome Produto</label>
+                <input class="gray" type="text" name="name" id="name">
+
+                <label for="manufacturer">Fabricante Produto</label>
+                <input class="gray" list="manufacturer">
+                <datalist id="manufacturer">
                     <option>Nestlé</option>
-                </datalist><br>
-            </div>
-            <div id="categoria-produto">
-                <label for="">CATEGORIA PRODUTO</label>
-                <input type="text" list="categoridata">
-                <datalist id="categoridata">
+                </datalist>
+
+                <label for="category">Categoria Produto</label>
+                <input class="gray" list="category">
+                <datalist id="category">
                     <option>Achocolatado</option>
-                </datalist><br>
-    
+                </datalist>
+
+                <label for="quantity">Quantidade</label>
+                <input class="gray" type="number" name="quantity" id="quantity">
+                
+                <label for="value">Valor Unidade</label>
+                <input type="number" name="value" id="value">
+
+                <button class="btn">Adicionar Produto</button>
+
+            </form>    
+
+        </section> 
+        <section id="listagem">
+            <div class="container-title">
+                <h2>Produtos Cadastrados</h2> 
+                <div class="container-row-title">
+                    <div>
+                        <label for="search">Buscar Produto</label>
+                        <input type="text" name="search" id="search">
+                    </div>
+                    <button class="btn">Buscar</button>
+                </div>
             </div>
-            <div>
-                <label for="">QUANTIDADE</label>
-                <input type="text" value="10"><br>
-            </div>
-    
-            <div>
-                <label for="">VALOR UNIDADE</label>
-                <input type="text" value="R$ 4,00"><br>
-            </div>
-
-            <div>
-                <button>Adicionar Produto</button>
-            </div>
-
-            </form>  
-        </section>
-        <section id="search">
-            <h2>BUSCAR PRODUTOS</h2>
-        <form action="">
-            <input type="search">
-            <button>Buscar</button>
-        </form>
-        </section>
-        <section id="produtos">
-            <h2>PRODUTOS CADASTRADO</h2>
-        <table id="data-table">
-            <tbody>
-                <tr>
-                    <th>NESCAU</th>
-                    <th>NESTLÉ</th>
-                    <th>ACHOLATADO</th>
-                    <th>10</th>
-                    <th>R$ 4,00</th>
-                    <th><a href="edit.html">Editar</a></th>
-                    <th><a href="X">Deletar</a></th>
-                </tr>
-                <tr>
-                    <th>NESCAU</th>
-                    <th>NESTLÉ</th>
-                    <th>ACHOLATADO</th>
-                    <th>10</th>
-                    <th>R$ 4,00</th>
-                    <th><a href="edit.html">Editar</a></th>
-                    <th><a href="X">Deletar</a></th>
-                </tr>
-                <tr>
-                    <th>NESCAU</th>
-                    <th>NESTLÉ</th>
-                    <th>ACHOLATADO</th>
-                    <th>10</th>
-                    <th>R$ 4,00</th>
-                    <th><a href="edit.html">Editar</a></th>
-                    <th><a href="X">Deletar</a></th>
-                </tr>
-                <tr>
-                    <th>NESCAU</th>
-                    <th>NESTLÉ</th>
-                    <th>ACHOLATADO</th>
-                    <th>10</th>
-                    <th>R$ 4,00</th>
-                    <th><a href="edit.html">Editar</a></th>
-                    <th><a href="X">Deletar</a></th>
-                </tr>
-                <tr>
-                    <th>NESCAU</th>
-                    <th>NESTLÉ</th>
-                    <th>ACHOLATADO</th>
-                    <th>10</th>
-                    <th>R$ 4,00</th>
-                    <th><a href="edit.html">Editar</a></th>
-                    <th><a href="X">Deletar</a></th>
-                </tr>
-                <tr>
-                    <th>Total</th>
-                    <th>50</th>
-                    <th>R$ 200,00</th>
-
-                </tr>
-            </tbody>
-        </table>
-        </section>        
-    </main>
-
-
+              
+            <table CELLSPACING=0>
+                <tbody>
+                    <tr class="space">
+                        <td>NESCAU</td>
+                        <td>NESTLÉ</td>
+                        <td>ACHOLATADO</td>
+                        <td>10</td>
+                        <td>R$ 4,00</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Deletar</a></td>
+                    </tr>
+                    <tr class="space">
+                        <td>NESCAU</td>
+                        <td>NESTLÉ</td>
+                        <td>ACHOLATADO</td>
+                        <td>10</td>
+                        <td>R$ 4,00</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Deletar</a></td>
+                    </tr>
+                    <tr class="space">
+                        <td>NESCAU</td>
+                        <td>NESTLÉ</td>
+                        <td>ACHOLATADO</td>
+                        <td>10</td>
+                        <td>R$ 4,00</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Deletar</a></td>
+                    </tr>
+                    <tr class="space">
+                        <td>NESCAU</td>
+                        <td>NESTLÉ</td>
+                        <td>ACHOLATADO</td>
+                        <td>10</td>
+                        <td>R$ 4,00</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Deletar</a></td>
+                    </tr>
+                    <tr class="space">
+                        <td>NESCAU</td>
+                        <td>NESTLÉ</td>
+                        <td>ACHOLATADO</td>
+                        <td>10</td>
+                        <td>R$ 4,00</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Deletar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>   
+    </div>
 </body>
-
 </html>

@@ -1,5 +1,7 @@
 /* Seletor Universal*/
-
+:root {
+    --color-blue: #002060;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +9,135 @@
 }
 
 body {
-    color: #002060;
+    color: var(--color-blue);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 0.8em;
 }
 
-/*CADASTRAR PRODUTO*/
-#cadastro {
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
 
+h2{
+    text-transform: uppercase;
+}
+/*CADASTRAR PRODUTO*/
+#cadastro, #listagem{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+
+#cadastro form {
+    display: flex;
+    flex-direction: column;
+}
+
+#cadastro form label {
+    text-transform: uppercase; 
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#cadastro form input {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+#cadastro .gray {
+    border-color: #CCC;
+}
+
+#cadastro input:nth-of-type(4),
+#cadastro input:nth-of-type(5) {
+    width: 20%;
+}
+
+#cadastro form input:last-of-type {
+    margin-bottom: 15px;
+    border-color: #999;
+
+}
+
+button.btn {
+    width: 40%;
+    background: var(--color-blue);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/*PRODUTOS CADASTRADOS*/
+#listagem h2 {
+    width: 60%;
+}
+
+#listagem button {
+    margin-left: -10px;
+    height: 40px;
+}
+
+#listagem input {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid;
+    width: 100%;
+}
+
+.container-row-title {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-row-title div {
+    padding-left: 20px;
+}
+
+.container-title{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+table {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    border-collapse: separate; 
+    border-spacing: 0 2em;
+}
+
+table tr {
+    background: #CCC;
+    height: 40px;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table tr td:first-child {
+    border-radius: 8px 0px 0px 8px;
+}
+
+#listagem label {
+    text-transform: uppercase; 
+    margin-bottom: 5px;
+}
+
+#listagem form input {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid;
 }
