@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dev.control</title>
+</head>
+   <link rel="stylesheet" href="./style.css">
+<body>
+   <h2>EDITAR PRODUTOS</h2>
+   <form action="">
+    <label for="">NOME PRODUTO</label>
+    <input type="text"><br>
+
+    <label for="">FABRICANTE PRODUTO</label>
+    <input 
+    type="text"
+    list="productdata">
+    <datalist id="productdata">
+        <option>Nestlé</option>
+    </datalist><br>
+
+    <label for="">CATEGORIA PRODUTO</label>
+    <input 
+    type="text"
+    list="categoridata">
+    <datalist id="categoridata">
+        <option>Achocolatado</option>
+    </datalist><br>
+
+    <label for="">QUANTIDADE</label>
+    <input type="text" value="10"><br>
+
+    <label for="">VALOR UNIDADE</label>
+    <input type="text" value="R$ 4,00"><br>
+
+    <button>Editar Produto</button>
+</form>
